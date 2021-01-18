@@ -1,2 +1,1 @@
-# Lista1PA
-Lista da Materia PROGRAMAÇAO AVANÇADA
+# Lista 1 (DCA1202) Programação Avançada Turma 01 (2020.2)
