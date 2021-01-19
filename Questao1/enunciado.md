@@ -1,5 +1,5 @@
 ##1. Seja o seguinte trecho de programa:
-```
+```c
 int
 int
 p =
@@ -10,7 +10,7 @@ i=3,j=5;
 &j;
 ```
 Determine o valor das seguintes expressões:
-```
+```c
 p == &i;
 *p - *q;
 **&p;
