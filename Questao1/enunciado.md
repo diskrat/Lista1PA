@@ -1,4 +1,4 @@
-##1. Seja o seguinte trecho de programa:
+## 1. Seja o seguinte trecho de programa:
 ```c
 int i=3,j=5;
 int *p, *q;
