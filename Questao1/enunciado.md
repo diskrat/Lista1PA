@@ -14,5 +14,5 @@ p == &i; // true
 // Dereferencia da dereferencia da posicao de memoria de p
 //&p: posicao de memoria de p, *&p: valor contido na posicao de memoria de p(&i), **&p: valor de i
 **&p; //3 (inteiro)
-3 - *p/(*q) + 7; //9.4 (float)
+3 - *p/(*q) + 7; //8 (inteiro)
 ```
