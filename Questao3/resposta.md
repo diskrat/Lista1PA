@@ -3,7 +3,7 @@
 p = i;// ilegal, q so pode receber endereco do inteiro, nao inteiro
 q = &j;// legal, estah recebendo o endereco do inteiro
 p = &*&i;// legal, o endereco de memorio da dereferencia do endereco de i (*&i) = i
-i = (*&)j;// acima, sintaxe incorreta a precisa da variavel inteira para resolver
+i = (*&)j;//sintaxe incorreta a precisa da variavel inteira para resolver
 i = *&j;// legal, recebe o valor de j
 i = *&*&j;//legal, tambem recebe o valor de j
 q =*p; // ilegal, um ponteiro para inteiro  nao deve receber um inteiro
