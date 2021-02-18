@@ -21,3 +21,5 @@ int main(void)
 
 */
 ```
+## Resposta 
+- o programa mostra o valor de ```i```, o valor contido em ```vet[i]```, mostra o endereco de memoria de ```vet[i]``` e no final mostra novamente o endereco de memoria mas usando o ponteiro f como referencia.
