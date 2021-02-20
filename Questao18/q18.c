@@ -11,7 +11,7 @@ void matrizMult(int **A,int **B,int **C,int NumLinA,int NumColA,int NumColB)
             C[i][j] = 0;
             for(k=0;k<NumColA;k++)
             {
-                C[i][j] += A[i][k]*B[k][j];
+                C[i][j] = C[i][j] + A[i][k]*B[k][j];
             }
         }
     }
@@ -21,7 +21,7 @@ void matrizMult(int **A,int **B,int **C,int NumLinA,int NumColA,int NumColB)
     {
         for(j=0;j<NumColA;j++)
         {
-            printf("%f ", A[i][j]);
+            printf("%d ", A[i][j]);
         }
         printf("\n");
     }
@@ -31,7 +31,7 @@ void matrizMult(int **A,int **B,int **C,int NumLinA,int NumColA,int NumColB)
     {
         for(j=0;j<NumColB;j++)
         {
-            printf("%f ", B[i][j]);
+            printf("%d ", B[i][j]);
         }
         printf("\n");
     }
@@ -41,7 +41,7 @@ void matrizMult(int **A,int **B,int **C,int NumLinA,int NumColA,int NumColB)
     {
         for(j=0;j<NumColA;j++)
         {
-            printf("%f ", C[i][j]);
+            printf("%d ", C[i][j]);
         }
         printf("\n");
     }
@@ -85,7 +85,7 @@ int main()
         for(j = 0; j<NumColA; j++)
         {
             printf("insira o valor de A[%d][%d]: ",i,j);
-            scanf("%f",&A[i][j]);
+            scanf("%d",&A[i][j]);
         }
     }
     printf("\n");
@@ -94,7 +94,7 @@ int main()
         for(j = 0; j<NumColB; j++)
         {
             printf("insira o valor de B[%d][%d]: ",i,j);
-            scanf("%f",&B[i][j]);
+            scanf("%d",&B[i][j]);
         }
     }
 
