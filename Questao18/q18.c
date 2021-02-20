@@ -71,13 +71,13 @@ int main()
     B[0] = malloc(NumColA*NumColB*sizeof(float));
     for(i=1; i < NumColA;i++)
     {
-        A[i] = A[i-1] + NumColB;
+        B[i] = B[i-1] + NumColB;
     }
     C = malloc(NumColA*sizeof(float*));
     C[0] = malloc(NumColA*NumColA*sizeof(float));
     for(i=1; i < NumColA;i++)
     {
-        A[i] = A[i-1] + NumColA;
+        C[i] = C[i-1] + NumColA;
     }
 
     for(i= 0;i<NumLinA; i++)
@@ -88,7 +88,7 @@ int main()
             scanf("%f",&A[i][j]);
         }
     }
-
+    printf("\n");
     for(i= 0;i<NumColA; i++)
     {
         for(j = 0; j<NumColB; j++)
