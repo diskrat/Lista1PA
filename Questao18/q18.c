@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void matrizMult(float **A,float **B,float **C,int NumLinA,int NumColA,int NumColB)
+void matrizMult(int **A,int **B,int **C,int NumLinA,int NumColA,int NumColB)
 {
     int i,j,k;
     for(i=0;i<NumLinA;i++)
@@ -51,7 +51,7 @@ void matrizMult(float **A,float **B,float **C,int NumLinA,int NumColA,int NumCol
 int main()
 {
     int NumLinA, NumColA, NumColB, i, j;
-    float **A, **B, **C;
+    int **A, **B, **C;
 
     printf("Insira o numero de Linhas de A: ");
     scanf("%d",&NumLinA);
@@ -61,20 +61,20 @@ int main()
     scanf("%d",&NumColB);
 
 
-    A = malloc(NumLinA*sizeof(float*));
-    A[0] = malloc(NumLinA*NumColA*sizeof(float));
+    A = malloc(NumLinA*sizeof(int*));
+    A[0] = malloc(NumLinA*NumColA*sizeof(int));
     for(i=1; i < NumLinA;i++)
     {
         A[i] = A[i-1] + NumColA;
     }
-    B = malloc(NumColA*sizeof(float*));
-    B[0] = malloc(NumColA*NumColB*sizeof(float));
+    B = malloc(NumColA*sizeof(int*));
+    B[0] = malloc(NumColA*NumColB*sizeof(int));
     for(i=1; i < NumColA;i++)
     {
         B[i] = B[i-1] + NumColB;
     }
-    C = malloc(NumColA*sizeof(float*));
-    C[0] = malloc(NumColA*NumColA*sizeof(float));
+    C = malloc(NumColA*sizeof(int*));
+    C[0] = malloc(NumColA*NumColA*sizeof(int));
     for(i=1; i < NumColA;i++)
     {
         C[i] = C[i-1] + NumColA;
